@@ -1,0 +1,14 @@
+### OSX ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Dependency directories
+node_modules/
+
+# 编译后的文件
+dist
+
+#编译后的文档
+site
