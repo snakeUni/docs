@@ -31,6 +31,10 @@
     "@mdx-js/react": "^1.6.18"
   },
   "peerDependencies": {
-    "vite": "^1.0.0-rc.4"
+    "vite": "^1.0.0-rc.4",
+    "vite-plugin-react": "^3.0.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.7.12"
   }
 }
