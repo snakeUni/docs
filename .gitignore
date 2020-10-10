@@ -9,6 +9,7 @@ node_modules/
 
 # 编译后的文件
 dist
+lib
 
 #编译后的文档
 site

@@ -4,6 +4,11 @@
   "command": {
     "bootstrap": {
       "npmClientArgs": ["--no-package-lock"]
+    },
+    "version": {
+      "message": "chore(release): %s [skip ci]"
     }
-  }
+  },
+  "npmClient": "yarn",
+  "useWorkspaces": true
 }

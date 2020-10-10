@@ -1,0 +1,20 @@
+{
+  "name": "mdx-plugin",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "peerDependencies": {
+    "@pika/react": "^16.13.1",
+    "@pika/react-dom": "^16.13.1",
+    "vite": "^1.0.0-rc.4",
+    "vite-plugin-react": "^3.0.2"
+  },
+  "devDependencies": {
+    "@snake/vite-plugin-mdx": "^0.0.0",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "typescript": "^3.9.3"
+  }
+}
