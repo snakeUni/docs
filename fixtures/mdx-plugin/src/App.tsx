@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import A from './a.mdx'
 import './App.css'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         >
           Learn React
         </a>
+        <A />
       </header>
     </div>
   )

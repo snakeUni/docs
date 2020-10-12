@@ -25,5 +25,21 @@
   },
   "bugs": {
     "url": "https://github.com/snakeUni/docs/issues"
+  },
+  "dependencies": {
+    "antd": "^4.7.0",
+    "prism-react-renderer": "^1.1.1"
+  },
+  "peerDependencies": {
+    "@mdx-js/react": "^1.6.18",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@mdx-js/react": "^1.6.18",
+    "@types/mdx-js__react": "^1.5.3",
+    "@types/react-router-dom": "^5.1.6",
+    "react-router-dom": "^5.2.0"
   }
 }
