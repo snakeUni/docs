@@ -34,6 +34,10 @@ export interface SiderProps {
    * 菜单的后置区域
    */
   afterMenus?: React.ReactNode
+  /**
+   * 样式
+   */
+  style?: React.CSSProperties
 }
 
 export type IMenu =
@@ -59,3 +63,7 @@ export type IMenu =
        */
       children: IMenu[]
     }
+
+export interface ShellProps {
+  children?: React.ReactNode
+}
