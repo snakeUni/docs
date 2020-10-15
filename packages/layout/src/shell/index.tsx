@@ -4,15 +4,23 @@ import Header from './header'
 import Sider from './sider'
 import { ShellProps } from './interface'
 
-export default function Shell({ children }: ShellProps) {
+export default function Shell({
+  children,
+  logo,
+  headerMenus,
+  siderMenus,
+  footer,
+  siderExtra,
+  headerExtra
+}: ShellProps) {
   return (
     <Layout>
-      <Header />
+      <Header logo={logo} menus={headerMenus} {...headerExtra} />
       <Layout>
-        <Sider />
+        <Sider menus={siderMenus} {...siderExtra} />
         <Layout>
           <Content>{children}</Content>
-          <Footer />
+          {footer && <Footer>{footer}</Footer>}
         </Layout>
       </Layout>
     </Layout>

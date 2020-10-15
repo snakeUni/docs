@@ -1,4 +1,15 @@
-export interface HeaderProps {
+export interface Extra {
+  /**
+   * 菜单的前置区域
+   */
+  beforeMenus?: React.ReactNode
+  /**
+   * 菜单的后置区域
+   */
+  afterMenus?: React.ReactNode
+}
+
+export interface HeaderProps extends Extra {
   /**
    * logo 区域
    */
@@ -11,29 +22,13 @@ export interface HeaderProps {
    * 菜单
    */
   menus?: IMenu[]
-  /**
-   * 菜单的前置区域
-   */
-  beforeMenus?: React.ReactNode
-  /**
-   * 菜单的后置区域
-   */
-  afterMenus?: React.ReactNode
 }
 
-export interface SiderProps {
+export interface SiderProps extends Extra {
   /**
    * 侧边栏
    */
   menus?: IMenu[]
-  /**
-   * 菜单的前置区域
-   */
-  beforeMenus?: React.ReactNode
-  /**
-   * 菜单的后置区域
-   */
-  afterMenus?: React.ReactNode
   /**
    * 样式
    */
@@ -66,4 +61,10 @@ export type IMenu =
 
 export interface ShellProps {
   children?: React.ReactNode
+  headerMenus?: IMenu[]
+  siderMenus?: IMenu[]
+  logo?: React.ReactNode
+  footer?: React.ReactNode
+  headerExtra?: Extra
+  siderExtra?: Extra
 }
