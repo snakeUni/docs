@@ -84,6 +84,25 @@ export function createTheme({
           const ContentComp = (dataPart as any).default
           const pageStaticDataPart = pageStaticData[key]
           const isMD = pageStaticDataPart.sourceType === 'md'
+          const content = isMD ? (
+            <MDX>
+              <ContentComp />
+            </MDX>
+          ) : (
+            <ContentComp />
+          )
+
+          if (isComposedPage) {
+            return (
+              <section style={{ marginBottom: 40 }} key={idx}>
+                <h2>{pageStaticDataPart.title}</h2>
+                {pageStaticDataPart.description && <p>{pageStaticDataPart.description}</p>}
+                {content}
+              </section>
+            )
+          }
+
+          return <div key={idx}>{content}</div>
         })}
       </Shell>
     )
