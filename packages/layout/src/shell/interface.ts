@@ -67,4 +67,6 @@ export interface ShellProps {
   footer?: React.ReactNode
   headerExtra?: Extra
   siderExtra?: Extra
+  hasHeader?: boolean
+  hasSider?: boolean
 }

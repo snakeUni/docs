@@ -7,6 +7,8 @@ export interface CreateThemeParam {
   footer?: React.ReactNode
   headerExtra?: Extra
   siderExtra?: Extra
+  hasHeader?: boolean
+  hasSider?: boolean
 }
 
 /** The type of a theme. */

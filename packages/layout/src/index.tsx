@@ -10,7 +10,9 @@ export function createTheme({
   headerExtra,
   headerMenus,
   logo,
-  footer
+  footer,
+  hasHeader,
+  hasSider
 }: CreateThemeParam): ITheme {
   const Theme: ITheme = ({ staticData, loadState, loadedData }) => {
     const newSiderMenus = React.useMemo(() => {
@@ -26,6 +28,8 @@ export function createTheme({
           footer={footer}
           headerExtra={headerExtra}
           headerMenus={headerMenus}
+          hasHeader={hasHeader}
+          hasSider={hasSider}
         >
           <p>initial Loading...</p>
         </Shell>
@@ -41,6 +45,8 @@ export function createTheme({
           footer={footer}
           headerExtra={headerExtra}
           headerMenus={headerMenus}
+          hasHeader={hasHeader}
+          hasSider={hasSider}
         >
           <p>Load error</p>
         </Shell>
@@ -57,6 +63,8 @@ export function createTheme({
           footer={footer}
           headerExtra={headerExtra}
           headerMenus={headerMenus}
+          hasHeader={hasHeader}
+          hasSider={hasSider}
         >
           {Com404 ? <Com404 /> : <p>Page not found.</p>}
         </Shell>
@@ -79,6 +87,8 @@ export function createTheme({
         footer={footer}
         headerExtra={headerExtra}
         headerMenus={headerMenus}
+        hasHeader={hasHeader}
+        hasSider={hasSider}
       >
         {Object.entries(pageData).map(([key, dataPart], idx) => {
           const ContentComp = (dataPart as any).default
