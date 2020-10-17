@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import A from './a.mdx'
+import Shell from '@snake/vite-layout/src/shell'
 import './App.css'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <p>Hello Vite + React!</p>
         <p>
           <button onClick={() => setCount(count => count + 1)}>count is: {count}</button>
@@ -23,8 +23,8 @@ function App() {
         >
           Learn React
         </a>
-        <A />
-      </header>
+      </header> */}
+      <Shell />
     </div>
   )
 }
